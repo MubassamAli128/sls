@@ -8,7 +8,7 @@
 </head>
 <body class="p-10">
     <div class="w-[100%] h-[100%] flex flex-row">
-        <div class="w-[50%] rounded-[50px] bg-[#524fec] text-white p-5 flex flex-col gap-10">
+        <div class="hidden w-[50%] rounded-[50px] bg-[#524fec] text-white p-5 md:flex flex-col gap-10">
             <p class="font-semibold text-3xl">Simplify management with our dashboard.</p>
             <p>Simplify management with our dashboard.</p>
             <div class="flex flex-row items-start justify-between">
@@ -16,7 +16,7 @@
                 <img src="./image.png" class="w-[300px]" alt="image">
             </div>
         </div>
-        <div class="flex flex-col items-center w-[50%] gap-5 mt-7">
+        <div class="flex flex-col items-center md:w-[50%] w-[100%] gap-5 mt-7">
             <div class="flex flex-row items-center">
                 <div class="bg-[#524fec] rounded-full text-white font-bold text-xl w-15 h-15 p-2">E🛒</div>
                 <div class="text-xl font-bold">E Spurt</div>
@@ -25,12 +25,12 @@
             <p class="text-[#c5c5c5]">Please create an account!</p>
 
             <form action="" class="relative w-full flex flex-col items-center gap-5 pb-7">
-                <input type="email" class="p-2 rounded-md bg-[#d6d6d6] w-[70%]" name="" id="SignUp-Email" placeholder="Email address.">
-                <input type="password" class="p-2 rounded-md bg-[#d6d6d6] w-[70%]" name="" id="SignUp-Pass" placeholder="Password.">
+                <input type="email" class="p-2 rounded-md bg-[#d6d6d6] w-[100%] md:w-[70%]" name="" id="SignUp-Email" placeholder="Email address.">
+                <input type="password" class="p-2 rounded-md bg-[#d6d6d6] w-[100%] md:w-[70%]" name="" id="SignUp-Pass" placeholder="Password.">
                 <a href="#" class="absolute right-24 bottom-0 text-blue-500 underline">forget password?</a>
-                <input type="submit" class="w-[70%] bg-[#524fec] p-2 rounded-lg text-white" name="" id="SignUp-Submit" value="Sign Up">
+                <input type="submit" class=" w-[100%] md:w-[70%] bg-[#524fec] p-2 rounded-lg text-white" name="" id="SignUp-Submit" value="Sign Up">
             </form>
-            <hr class="w-[70%] border-t-2 border-[#d6d6d6]">
+            <hr class=" w-[100%] md:w-[70%] border-t-2 border-[#d6d6d6]">
             <p>Already have an account? <a href="#" class="text-blue-500 underline">login</a></p>
         </div>
     </div>

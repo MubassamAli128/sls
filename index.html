@@ -21,18 +21,22 @@
                 <div class="bg-[#524fec] rounded-full text-white font-bold text-xl w-15 h-15 p-2">E🛒</div>
                 <div class="text-xl font-bold">E Spurt</div>
             </div>
-            <div class="text-2xl font-bold">Welcome</div>
-            <p class="text-[#c5c5c5]">Please create an account!</p>
+            <div id="message" class="text-2xl font-bold">Welcome</div>
+            <p id="message2" class="text-[#c5c5c5]">Please create an account!</p>
 
             <form action="" class="relative w-full flex flex-col items-center gap-5 pb-7">
-                <input type="email" class="p-2 rounded-md bg-[#d6d6d6] w-[100%] md:w-[70%]" name="" id="SignUp-Email" placeholder="Email address.">
+                <input type="email" class="p-2 rounded-md bg-[#d6d6d6] w-[100%] md:w-[70%]" name="" id="SignUp-Email" placeholder="Email address." required>
                 <input type="password" class="p-2 rounded-md bg-[#d6d6d6] w-[100%] md:w-[70%]" name="" id="SignUp-Pass" placeholder="Password.">
                 <a href="#" class="absolute right-24 bottom-0 text-blue-500 underline">forget password?</a>
                 <input type="submit" class=" w-[100%] md:w-[70%] bg-[#524fec] p-2 rounded-lg text-white" name="" id="SignUp-Submit" value="Sign Up">
             </form>
             <hr class=" w-[100%] md:w-[70%] border-t-2 border-[#d6d6d6]">
-            <p>Already have an account? <a href="#" class="text-blue-500 underline">login</a></p>
+            <span id="bottomMessage1">Already have an account?
+                <a id="bottomMessage2" href="#" class="text-blue-500 underline">login</a>
+            </span>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
     <title>Dashboard</title>
 </head>
 <body>
@@ -25,7 +27,71 @@
                 <i class="fa-solid fa-right-from-bracket hover:text-[#d6d6d6] hover:scale-125 transition-all"></i>
             </div>
         </div>
-        <div>Importent part is here don't disturb</div>
+        <div class="w-full bg-gray-300 p-5 flex flex-col gap-5">
+            <h1 class="text-4xl font-semibold text-[#302d4e] text-left">Good morning!</h1>
+            <div class="flex flex-row items-center justify-center gap-5 w-full flex-wrap">
+                <div class="p-5 rounded-2xl bg-white flex flex-col gap-2 w-[200px]">
+                    <div class="flex flex-row items-start justify-between">
+                        <i class="fa-solid fa-wallet"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <p class="text-2xl font-semibold text-[#302d4e]">$143,624</p>
+                    <p class="font-semibold">bank balance</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-white flex flex-col gap-2 w-[200px]">
+                    <div class="flex flex-row items-start justify-between">
+                        <i class="fa-solid fa-wallet"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <p class="text-2xl font-semibold text-[#302d4e]">$143,624</p>
+                    <p class="font-semibold">bank balance</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-white flex flex-col gap-2 w-[200px]">
+                    <div class="flex flex-row items-start justify-between">
+                        <i class="fa-solid fa-wallet"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <p class="text-2xl font-semibold text-[#302d4e]">$143,624</p>
+                    <p class="font-semibold">bank balance</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-white flex flex-col gap-2 w-[200px]">
+                    <div class="flex flex-row items-start justify-between">
+                        <i class="fa-solid fa-wallet"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <p class="text-2xl font-semibold text-[#302d4e]">$143,624</p>
+                    <p class="font-semibold">bank balance</p>
+                </div>
+
+            </div>
+            <div class="flex flex-row items-center w-full gap-5">
+                <div class="w-[25%] flex flex-col gap-5">
+                    <div class="rounded-2xl bg-white p-5">
+                        <p class="font-semibold">New clients</p>
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="text-4xl font-bold">54</div>
+                            <div class="bg-[#e7fadf] text-[#88df6f]">+18.7%</div>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-white p-5">
+                        <p class="font-semibold">Invoices overdue</p>
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="text-4xl font-bold">6</div>
+                            <div class="bg-[#e7fadf] text-[#88df6f]">+2.7%</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6 max-w-4xl w-full">
+                    <div class="flex justify-between items-center mb-4">
+                      <h1 class="text-lg font-bold text-gray-700">Revenue</h1>
+                      <span class="text-sm text-gray-500">Last 7 days VS prior week</span>
+                    </div>
+                    <div id="chart" class="w-full"></div>
+                  </div>
+                
+            </div>
+        </div>
         <div class="bg-[#f1f1f9] rounded-l-lg p-5 flex flex-col gap-5">
             <div class="flex flex-row items-center gap-5">
                 <i class="fa-solid fa-calendar-days"></i>

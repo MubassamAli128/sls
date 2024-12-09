@@ -95,3 +95,73 @@ const updateLocalStorage = () => {
 window.addEventListener('load', loadTasks);
 
 addTaskBtn.addEventListener('click', addTask);
+
+
+const options = {
+  series: [
+    {
+      name: 'Current Week',
+      data: [15000, 16000, 17000, 14000, 18000, 19000, 20000]
+    },
+    {
+      name: 'Previous Week',
+      data: [13000, 14000, 15000, 13000, 16000, 17000, 18000]
+    }
+  ],
+  chart: {
+    type: 'line',
+    height: 200, // Increased height for better proportions
+    width: '100%', // Ensures it stretches horizontally
+    toolbar: {
+      show: false
+    }
+  },
+  stroke: {
+    curve: 'smooth',
+    width: 3
+  },
+  legend: {
+    position: 'top',
+    horizontalAlign: 'right'
+  },
+  colors: ['#5A67D8', '#805AD5'],
+  markers: {
+    size: 5,
+    hover: {
+      size: 7
+    }
+  },
+  xaxis: {
+    categories: ['Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20'],
+    labels: {
+      style: {
+        colors: '#A0AEC0',
+        fontSize: '12px'
+      }
+    }
+  },
+  yaxis: {
+    labels: {
+      style: {
+        colors: '#A0AEC0',
+        fontSize: '12px'
+      }
+    }
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+    y: {
+      formatter: function (val) {
+        return `$${val.toLocaleString()}`;
+      }
+    }
+  },
+  grid: {
+    borderColor: '#EDF2F7',
+    strokeDashArray: 5
+  }
+};
+
+const chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();

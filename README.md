@@ -29,4 +29,4 @@ A responsive web application that includes a **SignUp/Login page** and an intera
 
 1. Clone the repository:
    ```bash
-   $ git clone https://github.com/MubassamAli128/SignUp-Login_System.git
+   $ git clone https://github.com/MubassamAli128/sls
